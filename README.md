@@ -1,6 +1,4 @@
 # GroupProject
-# Forlana-Farm
-
 1. NEVER PUSH TO MASTER(EVER).
 
 2. Double and triple check your code.
