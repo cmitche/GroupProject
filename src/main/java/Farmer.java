@@ -1,2 +1,7 @@
-public class Farmer extends Botanist{
+public class Farmer extends Person implements IEater {
+    @Override
+    public String isEating() {
+        return null;
+    }
+
 }
