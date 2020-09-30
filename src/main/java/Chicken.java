@@ -1,7 +1,6 @@
 public class Chicken implements IProduce{
     Egg egg;
 
-    public Chicken(){}
     public Chicken(Egg egg) {
         this.egg = egg;
     }

@@ -2,11 +2,14 @@ public class Pilot extends Person{
     private int hat;
     private int googles;
     private int gloves;
+    CropDuster cropDuster;
 
-    public Pilot(int hat, int googles, int gloves) {
+
+    public Pilot(int hat, int googles, int gloves, CropDuster cropDuster) {
         this.hat = hat;
         this.googles = googles;
         this.gloves = gloves;
+        this.cropDuster = cropDuster;
     }
 
     public int getHat() {
@@ -39,6 +42,7 @@ public class Pilot extends Person{
                 "hat=" + hat +
                 ", googles=" + googles +
                 ", gloves=" + gloves +
+                ", cropDuster=" + cropDuster +
                 ", name='" + name + '\'' +
                 '}';
     }
