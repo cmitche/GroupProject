@@ -1,4 +1,4 @@
-public class Farmer extends Person implements IEater, IBotanist {
+public class Farmer extends Person implements IEater{
 
     public Farmer(String name) {
         super(name);
@@ -9,11 +9,4 @@ public class Farmer extends Person implements IEater, IBotanist {
         return null;
     }
 
-
-    @Override
-    public String toString() {
-        return "Farmer{" +
-                "name='" + name + '\'' +
-                '}';
-    }
 }

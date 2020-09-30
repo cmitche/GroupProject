@@ -5,7 +5,8 @@ public class Pilot extends Person{
     CropDuster cropDuster;
 
 
-    public Pilot(int hat, int googles, int gloves, CropDuster cropDuster) {
+    public Pilot(String name, int hat, int googles, int gloves, CropDuster cropDuster) {
+        super(name);
         this.hat = hat;
         this.googles = googles;
         this.gloves = gloves;
@@ -43,7 +44,6 @@ public class Pilot extends Person{
                 ", googles=" + googles +
                 ", gloves=" + gloves +
                 ", cropDuster=" + cropDuster +
-                ", name='" + name + '\'' +
                 '}';
     }
 }

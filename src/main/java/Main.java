@@ -69,23 +69,23 @@ public class Main {
         stablez[1].setStable(whiteHorses);
         stablez[2].setStable(brownHorses);
 
-        ArrayList<CropRow> cropRowArrayList = new ArrayList<>();
-        cropRowArrayList.add()
-
         ArrayList<Stable> stables = new ArrayList<>();
         stables.add(stablez[0]);
         stables.add(stablez[1]);
         stables.add(stablez[2]);
+
+        ArrayList<CropRow> cropRowArrayList = new ArrayList<>();
+        cropRowArrayList.add(0, new CropRow())
 
         Field[] fields = new Field[1];
         fields[0] = new Field();
 
         fields[0].
 
-        ArrayList<Crop> cropArrayList = new ArrayList<>();
-        cropArrayList.add(new CornStalk(new EarCorn(5)));
-        cropArrayList.add(new TomatoPlant(new Tomato("Green", .50, false)));
-        cropArrayList.add(new TomatoPlant(new Tomato("Yellow", .60, false)));
+//        ArrayList<Crop> cropArrayList = new ArrayList<>();
+//        cropArrayList.add(new CornStalk(new EarCorn(5)));
+//        cropArrayList.add(new TomatoPlant(new Tomato("Green", .50, false)));
+//        cropArrayList.add(new TomatoPlant(new Tomato("Yellow", .60, false)));
 
         ArrayList<CropRow> cropRows = new ArrayList<>();
         cropRows.add(new CropRow(1,cropArrayList));
@@ -104,7 +104,6 @@ public class Main {
 
         Farmer froilan = new Farmer("Froilan");
 
-<<<<<<< HEAD
         ArrayList<Farmhouse> house = new ArrayList<>();
         house.add(0, new Farmhouse(hillBillies));
 
@@ -127,9 +126,3 @@ public class Main {
 
     }
 }
-=======
-        Farm farm1 = new Farm()
-        ArrayList<CropRow> cropRows = new ArrayList<>();
-    }
-}
->>>>>>> daee5edc0156e15bb77d6540f3adf798e537f570
