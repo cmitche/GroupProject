@@ -4,7 +4,26 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Chicken> whiteChicken = new ArrayList<>();
+        Chicken[] chickens1 = new Chicken[3];
+        chickens1[0] = new Chicken();
+        chickens1[1] = new Chicken();
+        chickens1[2] = new Chicken();
+
+        Chicken[] chickens2 = new Chicken[3];
+        chickens2[0] = new Chicken();
+        chickens2[1] = new Chicken();
+        chickens2[2] = new Chicken();
+
+        Chicken[] chickens3 = new Chicken[3];
+        chickens3[0] = new Chicken();
+        chickens3[1] = new Chicken();
+        chickens3[2] = new Chicken();
+
+        ChickenCoop chickenCoop = new ChickenCoop();
+
+
+
+        /*ArrayList<Chicken> whiteChicken = new ArrayList<>();
         whiteChicken.add(new Chicken());
         whiteChicken.add(new Chicken());
         whiteChicken.add(new Chicken());
@@ -54,7 +73,7 @@ public class Main {
 
 
         Farmhouse[] house = new Farmhouse[1];
-        house[0] = new Farmhouse();
+        house[0] = new Farmhouse();*/
 
         //Farm farm = new Farm();
 
