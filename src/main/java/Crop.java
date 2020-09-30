@@ -18,4 +18,6 @@ public abstract class Crop implements IProduce{
     }
 
     public abstract boolean hasBeenFertilized(IProduce a);
+
+
 }

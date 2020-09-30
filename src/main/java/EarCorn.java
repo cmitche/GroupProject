@@ -12,4 +12,11 @@ public class EarCorn {
     public void setLeaves(int leaves){
         this.leaves = leaves;
     }
+
+    @Override
+    public String toString() {
+        return "EarCorn{" +
+                "leaves=" + leaves +
+                '}';
+    }
 }

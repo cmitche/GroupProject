@@ -50,4 +50,10 @@ public class CornStalk extends Crop{
         return false;
     }
 
+    @Override
+    public String toString() {
+        return "CornStalk{" +
+                "earCorn=" + earCorn +
+                '}';
+    }
 }

@@ -54,4 +54,11 @@ public class TomatoPlant extends Crop{
     public boolean hasBeenHarvested() {
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "TomatoPlant{" +
+                "tomato=" + tomato +
+                '}';
+    }
 }

@@ -1,8 +1,12 @@
 public class Chicken implements IProduce{
     Egg egg;
+    private String name;
+    private char gender;
 
-    public Chicken(){}
-    public Chicken(Egg egg) {
+
+    public Chicken(String name, char gender, Egg egg){
+        this.name = name;
+        this.gender = gender;
         this.egg = egg;
     }
 
@@ -16,8 +20,24 @@ public class Chicken implements IProduce{
 
     public void fertileEgg(Egg egg){
         if(hasBeenFertilized(egg)){
-
+            System.out.println("Has been fertilized.");
         }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
     }
 
     @Override
@@ -48,5 +68,10 @@ public class Chicken implements IProduce{
     @Override
     public boolean hasBeenFertilized(IProduce a) {
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "\n"+ name +" | "+ gender +" | "+ egg +"\n";
     }
 }

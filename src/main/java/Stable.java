@@ -17,4 +17,8 @@ public class Stable {
         this.stable = stable;
     }
 
+    @Override
+    public String toString() {
+        return ""+ stable;
+    }
 }

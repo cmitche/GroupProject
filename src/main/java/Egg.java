@@ -1,5 +1,11 @@
 public class Egg implements IProduce, IEdible{
 
+    private String color;
+
+    public Egg(String color) {
+        this.color = color;
+    }
+
     @Override
     public boolean isEdible() {
         return false;
@@ -33,5 +39,10 @@ public class Egg implements IProduce, IEdible{
     @Override
     public boolean hasBeenFertilized(IProduce a) {
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Egg color: "+ color;
     }
 }
