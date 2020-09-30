@@ -49,4 +49,11 @@ public class Chicken implements IProduce{
     public boolean hasBeenFertilized(IProduce a) {
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "Chicken{" +
+                "egg=" + egg +
+                '}';
+    }
 }
