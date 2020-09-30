@@ -1,8 +1,19 @@
-public class Egg implements IProduce, IEdible{
+public class CornStalk extends Crop{
+
+    EarCorn earCorn;
+
+    public EarCorn yield(){
+        return earCorn;
+    }
 
     @Override
-    public boolean isEdible() {
-        return false;
+    public void fertilized() {
+        System.out.println("The Corn Has Been Fertilized.");
+    }
+
+    @Override
+    public void harvest() {
+        System.out.println("The Corn Is Ready For Harvest.");
     }
 
     @Override
@@ -34,4 +45,6 @@ public class Egg implements IProduce, IEdible{
     public boolean hasBeenFertilized(IProduce a) {
         return false;
     }
+
+
 }
