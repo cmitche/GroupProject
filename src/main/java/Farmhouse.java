@@ -16,4 +16,10 @@ public class Farmhouse {
         this.people = people;
     }
 
+    @Override
+    public String toString() {
+        return "Farmhouse{" +
+                "people=" + people +
+                '}';
+    }
 }
