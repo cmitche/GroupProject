@@ -6,7 +6,7 @@ public class ChickenCoop {
         public ChickenCoop(){}
 
         public ChickenCoop(ArrayList<Chicken> coop) {
-                Coop = coop;
+                this.Coop = coop;
         }
 
         public ArrayList<Chicken> getCoop() {
