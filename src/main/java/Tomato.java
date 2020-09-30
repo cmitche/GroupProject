@@ -36,10 +36,7 @@ public class Tomato {
 
     @Override
     public String toString() {
-        return "Tomato{" +
-                "color='" + color + '\'' +
-                ", weightInLbs=" + weightInLbs +
-                ", isRipe=" + isRipe +
-                '}';
+        return "\nTomato " +
+                "color: " + color +" | "+ "weight of tomatoes: " +weightInLbs+ "lbs | " + "is ripe: "+ isRipe;
     }
 }

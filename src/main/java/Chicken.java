@@ -7,6 +7,7 @@ public class Chicken implements IProduce{
     public Chicken(String name, char gender, Egg egg) {
         this.name = name;
         this.gender = gender;
+        this.egg = egg;
     }
 
     public Chicken(Egg egg) {
