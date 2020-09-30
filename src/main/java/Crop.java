@@ -5,7 +5,6 @@ public abstract class Crop implements IProduce{
     //- hasBeenFertilized: boolean
     private boolean hasBeenFertilized;
 
-
     //+ fertilized(): void
     public abstract void fertilized();
 
@@ -16,4 +15,6 @@ public abstract class Crop implements IProduce{
     public boolean getHasBeenFertilized() {
         return hasBeenFertilized;
     }
+
+    public abstract boolean hasBeenFertilized(IProduce a);
 }
