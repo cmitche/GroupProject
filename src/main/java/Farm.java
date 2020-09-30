@@ -1,35 +1,58 @@
+import java.util.ArrayList;
+
 public class Farm {
-    Stable[] stable;
-    ChickenCoop[] chickenCoop;
-    Farmhouse[] farmhouse;
 
-    public Stable[] getStable() {
-        return stable;
+    ArrayList<Stable> stables = new ArrayList<>();
+    ArrayList<ChickenCoop> chickenCoops = new ArrayList<>();
+    ArrayList<Farmhouse> farmHouse = new ArrayList<>();
+    ArrayList<Field> field = new ArrayList<>();
+
+    public Farm( ArrayList<Field> field, ArrayList<Stable> stables, ArrayList<ChickenCoop> chickenCoops, ArrayList<Farmhouse> farmHouse) {
+        this.stables = stables;
+        this.chickenCoops = chickenCoops;
+        this.farmHouse = farmHouse;
+        this.field = field;
     }
 
-    public void setStable(Stable[] stable) {
-        this.stable = stable;
+    public ArrayList<Stable> getStables() {
+        return stables;
     }
 
-    public ChickenCoop[] getChickenCoop() {
-        return chickenCoop;
+    public ArrayList<Field> getField() {
+        return field;
     }
 
-    public void setChickenCoop(ChickenCoop[] chickenCoop) {
-        this.chickenCoop = chickenCoop;
+    public void setField(ArrayList<Field> field) {
+        this.field = field;
     }
 
-    public Farmhouse[] getFarmhouse() {
-        return farmhouse;
+    public void setStables(ArrayList<Stable> stables) {
+        this.stables = stables;
     }
 
-    public void setFarmhouse(Farmhouse[] house) {
-        farmhouse = house;
+    public ArrayList<ChickenCoop> getChickenCoops() {
+        return chickenCoops;
     }
 
-    public Farm(Stable[] stable, ChickenCoop[] coop, Farmhouse[] house){
-        this.stable = stable;
-        this.chickenCoop = coop;
-        farmhouse = house;
+    public void setChickenCoops(ArrayList<ChickenCoop> chickenCoops) {
+        this.chickenCoops = chickenCoops;
+    }
+
+    public ArrayList<Farmhouse> getFarmHouse() {
+        return farmHouse;
+    }
+
+    public void setFarmHouse(ArrayList<Farmhouse> farmHouse) {
+        this.farmHouse = farmHouse;
+    }
+
+    @Override
+    public String toString() {
+        return "Farm{" +
+                "stables=" + stables +
+                ", chickenCoops=" + chickenCoops +
+                ", farmHouse=" + farmHouse +
+                ", field=" + field +
+                '}';
     }
 }

@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class CropRow {
     //properties/attributes/instance field
-    public ArrayList<CropRow> listOfCropRows;
+    ArrayList<CropRow> cropRows;
 
-    ArrayList<CropRow> cropRows = new ArrayList<CropRow>();
+    public ArrayList<CropRow> listOfCropRows;
 
     //constructor
     public CropRow(ArrayList<CropRow> listOfCropRows, ArrayList<CropRow> cropRows) {

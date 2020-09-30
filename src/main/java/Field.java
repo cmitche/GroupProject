@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Field {
 
-    public ArrayList<CropRow> listOfCropRows = new ArrayList<>();
+    public ArrayList<CropRow> listOfCropRows;
 
     //constructor
 
