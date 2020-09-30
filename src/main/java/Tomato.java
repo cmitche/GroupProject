@@ -31,6 +31,7 @@ public class Tomato {
 
     public void setRipe(boolean ripe) {
         isRipe = ripe;
+
     }
 
     @Override

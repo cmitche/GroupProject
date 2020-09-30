@@ -1,4 +1,3 @@
-public interface IFarmVechile extends IVechile {
-
-    void operateFarm();
+public interface IFarmVechile extends IVehicle {
+    public void operateFarm();
 }

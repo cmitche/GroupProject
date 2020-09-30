@@ -3,10 +3,14 @@ public class Chicken implements IProduce{
     private String name;
     private char gender;
 
+<<<<<<< HEAD
 
     public Chicken(String name, char gender, Egg egg){
         this.name = name;
         this.gender = gender;
+=======
+    public Chicken(Egg egg) {
+>>>>>>> daee5edc0156e15bb77d6540f3adf798e537f570
         this.egg = egg;
     }
 
@@ -72,6 +76,12 @@ public class Chicken implements IProduce{
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return "\n"+ name +" | "+ gender +" | "+ egg +"\n";
+=======
+        return "Chicken{" +
+                "egg=" + egg +
+                '}';
+>>>>>>> daee5edc0156e15bb77d6540f3adf798e537f570
     }
 }

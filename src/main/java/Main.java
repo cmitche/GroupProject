@@ -104,6 +104,7 @@ public class Main {
 
         Farmer froilan = new Farmer("Froilan");
 
+<<<<<<< HEAD
         ArrayList<Farmhouse> house = new ArrayList<>();
         house.add(0, new Farmhouse(hillBillies));
 
@@ -126,3 +127,9 @@ public class Main {
 
     }
 }
+=======
+        Farm farm1 = new Farm()
+        ArrayList<CropRow> cropRows = new ArrayList<>();
+    }
+}
+>>>>>>> daee5edc0156e15bb77d6540f3adf798e537f570
