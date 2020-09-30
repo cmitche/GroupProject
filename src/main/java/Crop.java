@@ -11,10 +11,29 @@ public abstract class Crop implements IProduce{
     //+ harvest(): void
     public abstract void harvest();
 
-    //+ getHasBeenFertilized(): void
-    public boolean getHasBeenFertilized() {
+    public boolean isHasBeenHarvested() {
+        return hasBeenHarvested;
+    }
+
+    public void setHasBeenHarvested(boolean hasBeenHarvested) {
+        this.hasBeenHarvested = hasBeenHarvested;
+    }
+
+    public boolean isHasBeenFertilized() {
         return hasBeenFertilized;
     }
 
+    public void setHasBeenFertilized(boolean hasBeenFertilized) {
+        this.hasBeenFertilized = hasBeenFertilized;
+    }
+
     public abstract boolean hasBeenFertilized(IProduce a);
+
+    @Override
+    public String toString() {
+        return "Crop{" +
+                "hasBeenHarvested=" + hasBeenHarvested +
+                ", hasBeenFertilized=" + hasBeenFertilized +
+                '}';
+    }
 }
