@@ -2,15 +2,15 @@ public interface IProduce {
     boolean harvested = true;
     boolean fertilized = true;
 
-    public boolean isHarvested();
+    boolean isHarvested();
 
-    public void setHarvested(boolean harvested);
+    void setHarvested(boolean harvested);
 
-    public boolean isFertilized();
+    boolean isFertilized();
 
-    public void setFertilized(boolean fertilized);
+    void setFertilized(boolean fertilized);
 
-    public boolean hasBeenHarvested();
+    boolean hasBeenHarvested();
 
-    public boolean hasBeenFertilized(Produce a);
+    boolean hasBeenFertilized(IProduce a);
 }

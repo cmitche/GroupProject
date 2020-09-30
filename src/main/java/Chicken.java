@@ -1,4 +1,4 @@
-public class Chicken extends Produce{
+public class Chicken implements IProduce{
     Egg egg;
 
     public Chicken(){}
@@ -20,4 +20,33 @@ public class Chicken extends Produce{
         }
     }
 
+    @Override
+    public boolean isHarvested() {
+        return false;
+    }
+
+    @Override
+    public void setHarvested(boolean harvested) {
+
+    }
+
+    @Override
+    public boolean isFertilized() {
+        return false;
+    }
+
+    @Override
+    public void setFertilized(boolean fertilized) {
+
+    }
+
+    @Override
+    public boolean hasBeenHarvested() {
+        return false;
+    }
+
+    @Override
+    public boolean hasBeenFertilized(IProduce a) {
+        return false;
+    }
 }
