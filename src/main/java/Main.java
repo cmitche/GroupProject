@@ -4,93 +4,29 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Chicken[] chickens1 = new Chicken[3];
-        chickens1[0] = new Chicken();
-        chickens1[1] = new Chicken();
-        chickens1[2] = new Chicken();
+        ArrayList<Horse> horses = new ArrayList<>();
+        horses.add(new Horse());
 
-        Chicken[] chickens2 = new Chicken[3];
-        chickens2[0] = new Chicken();
-        chickens2[1] = new Chicken();
-        chickens2[2] = new Chicken();
+        ArrayList<Chicken> chickens = new ArrayList<>();
 
-        Chicken[] chickens3 = new Chicken[3];
-        chickens3[0] = new Chicken();
-        chickens3[1] = new Chicken();
-        chickens3[2] = new Chicken();
-
-        ChickenCoop chickenCoop = new ChickenCoop();
-
-
-
-        /*ArrayList<Chicken> whiteChicken = new ArrayList<>();
-        whiteChicken.add(new Chicken());
-        whiteChicken.add(new Chicken());
-        whiteChicken.add(new Chicken());
-
-        ArrayList<Chicken> dumbChicken = new ArrayList<>();
-        dumbChicken.add(new Chicken());
-        dumbChicken.add(new Chicken());
-        dumbChicken.add(new Chicken());
-
-        ArrayList<Chicken> brownChicken = new ArrayList<>();
-        brownChicken.add(new Chicken());
-        brownChicken.add(new Chicken());
-        brownChicken.add(new Chicken());
-        brownChicken.add(new Chicken());
-        brownChicken.add(new Chicken());
-
-        ArrayList<Chicken> yellowChicken = new ArrayList<>();
-        yellowChicken.add(new Chicken());
-        yellowChicken.add(new Chicken());
-        yellowChicken.add(new Chicken());
-        yellowChicken.add(new Chicken());
-
-        ChickenCoop[] chickenCoops = new ChickenCoop[4];
-        chickenCoops[0].setCoop(brownChicken);
-        chickenCoops[1].setCoop(whiteChicken);
-        chickenCoops[2].setCoop(dumbChicken);
-        chickenCoops[3].setCoop(yellowChicken);
-
-        ArrayList<Horse> brownHorse = new ArrayList<>();
-        brownHorse.add(new Horse());
-        brownHorse.add(new Horse());
-        brownHorse.add(new Horse());
-
-        ArrayList<Horse> blueHorse = new ArrayList<>();
-        blueHorse.add(new Horse());
-        blueHorse.add(new Horse());
-        blueHorse.add(new Horse());
-        blueHorse.add(new Horse());
-
-        Horse[] pinkHorse = new Horse[3];
-        pinkHorse[0] = new Horse();
-        pinkHorse[1] = new Horse();
-        pinkHorse[2] = new Horse();
+        ArrayList<ChickenCoop> coops = new ArrayList<>();
 
         ArrayList<Stable> stables = new ArrayList<>();
-        stables.add(new Stable());
 
+        ArrayList<Crop> cropArrayList = new ArrayList<>();
+        cropArrayList.add(new CornStalk(new EarCorn(5)));
+        cropArrayList.add(new TomatoPlant(new Tomato("Green", .50, false)));
+        cropArrayList.add(new TomatoPlant(new Tomato("Green", .45, false)));
 
-        Farmhouse[] house = new Farmhouse[1];
-        house[0] = new Farmhouse();*/
+        ArrayList<CropRow> cropRows = new ArrayList<>();
+        cropRows.add(new Crop)
 
-        //Farm farm = new Farm();
+        ArrayList<Field> fields = new ArrayList<>();
+        fields.add(new Field(cropRows));
 
-        //System.out.println("Printing out FarmHouse, Coops and Stables: "+ farm);
+        Farmer froilan = new Farmer("Froilan");
 
-//        System.out.println("Printing Stables"+ stable.length);
-//        System.out.println(stable[0].getStable());
-//        System.out.println(stable[1].getStable());
-//        System.out.println(stable[2].getStable());
-//
-//        System.out.println(blueHorse);
-//        System.out.println(blueHorse);
-//        System.out.println(pinkHorse);
-//        System.out.println(stable[0]);
-//        System.out.println(stable[1]);
-//        System.out.println(stable[2]);
-
+        Farm farm1 = new Farm()
+        ArrayList<CropRow> cropRows = new ArrayList<>();
     }
-
 }

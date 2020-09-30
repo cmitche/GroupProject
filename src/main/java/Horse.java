@@ -1,4 +1,4 @@
-public class Horse {
+public class Horse extends Stable {
 
     public Horse() {
     }

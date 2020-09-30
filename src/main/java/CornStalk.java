@@ -5,6 +5,10 @@ public class CornStalk extends Crop{
         return earCorn;
     }
 
+    public CornStalk(EarCorn earCorn) {
+        this.earCorn = earCorn;
+    }
+
     @Override
     public void fertilized() {
         System.out.println("The Corn Has Been Fertilized.");

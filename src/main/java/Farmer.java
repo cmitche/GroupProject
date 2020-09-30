@@ -1,6 +1,13 @@
-public class Farmer extends Botanist{
+public class Farmer extends Person implements IEater, IBotanist {
+    private String name;
+
     public Farmer(String name) {
-        super(name);
+        this.name = name;
+    }
+
+    @Override
+    public String isEating() {
+        return null;
     }
 
 

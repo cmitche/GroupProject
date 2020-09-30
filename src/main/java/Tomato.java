@@ -1,18 +1,12 @@
 public class Tomato {
-    private int leaves;
     private String color;
+    private double weightInLbs;
+    private boolean isRipe;
 
-    public Tomato(int leaves, String color) {
-        this.leaves = leaves;
+    public Tomato(String color, double weightInLbs, boolean isRipe) {
         this.color = color;
-    }
-
-    public int getLeaves() {
-        return leaves;
-    }
-
-    public void setLeaves(int leaves) {
-        this.leaves = leaves;
+        this.weightInLbs = weightInLbs;
+        this.isRipe = isRipe;
     }
 
     public String getColor() {
@@ -23,11 +17,29 @@ public class Tomato {
         this.color = color;
     }
 
+    public double getWeightInLbs() {
+        return weightInLbs;
+    }
+
+    public void setWeightInLbs(double weightInLbs) {
+        this.weightInLbs = weightInLbs;
+    }
+
+    public boolean isRipe() {
+        return isRipe;
+    }
+
+    public void setRipe(boolean ripe) {
+        isRipe = ripe;
+
+    }
+
     @Override
     public String toString() {
         return "Tomato{" +
-                "leaves=" + leaves +
-                ", color='" + color + '\'' +
+                "color='" + color + '\'' +
+                ", weightInLbs=" + weightInLbs +
+                ", isRipe=" + isRipe +
                 '}';
     }
 }

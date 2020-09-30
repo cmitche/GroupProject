@@ -5,9 +5,9 @@ public class CropRow {
     private int plots;
 
     //properties/attributes/instance field
-    public ArrayList<CropRow> listOfCropRows;
+    ArrayList<CropRow> cropRows;
 
-    ArrayList<CropRow> cropRows = new ArrayList<CropRow>();
+    public ArrayList<CropRow> listOfCropRows;
 
     public CropRow(int lengthInYards, int plots, ArrayList<CropRow> listOfCropRows, ArrayList<CropRow> cropRows) {
         this.lengthInYards = lengthInYards;
