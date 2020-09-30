@@ -1,3 +1,4 @@
 public interface IEater {
-    public String isEating();
+
+    String isEating();
 }

@@ -1,3 +1,10 @@
 public class Tractor implements IFarmVechile {
-    public void operateFarm(){}
+    CropRow cropRow;
+
+    public Tractor(){}
+
+    @Override
+    public void operateFarm() {
+
+    }
 }

@@ -1,3 +1,4 @@
 public interface IFarmVechile extends IVechile {
-    public void operateFarm();
+
+    void operateFarm();
 }
