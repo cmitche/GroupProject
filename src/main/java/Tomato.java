@@ -22,4 +22,12 @@ public class Tomato {
     public void setColor(String color) {
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "Tomato{" +
+                "leaves=" + leaves +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
