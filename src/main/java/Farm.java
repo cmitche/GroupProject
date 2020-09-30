@@ -1,46 +1,35 @@
-import java.util.ArrayList;
-
 public class Farm {
-    ArrayList<Stable> stables = new ArrayList<>();
-    ArrayList<ChickenCoop> chickenCoops = new ArrayList<>();
-    ArrayList<Farmhouse> farmhouse = new ArrayList<>();
+    Stable[] stable;
+    ChickenCoop[] chickenCoop;
+    Farmhouse[] farmhouse;
 
-    public Farm(ArrayList<Stable> stables, ArrayList<ChickenCoop> chickenCoops, ArrayList<Farmhouse> farmhouse) {
-        this.stables = stables;
-        this.chickenCoops = chickenCoops;
-        this.farmhouse = farmhouse;
+    public Stable[] getStable() {
+        return stable;
     }
 
-    public ArrayList<Stable> getStables() {
-        return stables;
+    public void setStable(Stable[] stable) {
+        this.stable = stable;
     }
 
-    public void setStables(ArrayList<Stable> stables) {
-        this.stables = stables;
+    public ChickenCoop[] getChickenCoop() {
+        return chickenCoop;
     }
 
-    public ArrayList<ChickenCoop> getChickenCoops() {
-        return chickenCoops;
+    public void setChickenCoop(ChickenCoop[] chickenCoop) {
+        this.chickenCoop = chickenCoop;
     }
 
-    public void setChickenCoops(ArrayList<ChickenCoop> chickenCoops) {
-        this.chickenCoops = chickenCoops;
-    }
-
-    public ArrayList<Farmhouse> getFarmhouse() {
+    public Farmhouse[] getFarmhouse() {
         return farmhouse;
     }
 
-    public void setFarmhouse(ArrayList<Farmhouse> farmhouse) {
-        this.farmhouse = farmhouse;
+    public void setFarmhouse(Farmhouse[] house) {
+        farmhouse = house;
     }
 
-    @Override
-    public String toString() {
-        return "Farm{" +
-                "stables=" + stables +
-                ", chickenCoops=" + chickenCoops +
-                ", farmhouse=" + farmhouse +
-                '}';
+    public Farm(Stable[] stable, ChickenCoop[] coop, Farmhouse[] house){
+        this.stable = stable;
+        this.chickenCoop = coop;
+        farmhouse = house;
     }
 }
