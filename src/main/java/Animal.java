@@ -1,7 +1,7 @@
 public class Animal implements INoiseMaker,IEater{
 
     @Override
-    public String makeNoise() {
+    public void makeNoise() {
 
         return "Animals make noise";
     }

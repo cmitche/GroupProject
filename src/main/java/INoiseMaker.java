@@ -1,4 +1,3 @@
 public interface INoiseMaker {
-
-    String makeNoise();
+    void makeNoise();
 }
