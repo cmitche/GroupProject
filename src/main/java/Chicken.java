@@ -1,7 +1,6 @@
 public class Chicken implements IProduce{
     Egg egg;
 
-    public Chicken(){}
     public Chicken(Egg egg) {
         this.egg = egg;
     }
@@ -48,5 +47,12 @@ public class Chicken implements IProduce{
     @Override
     public boolean hasBeenFertilized(IProduce a) {
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Chicken{" +
+                "egg=" + egg +
+                '}';
     }
 }
