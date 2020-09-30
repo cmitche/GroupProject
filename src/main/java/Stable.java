@@ -1,17 +1,20 @@
 import java.util.ArrayList;
 
 public class Stable {
+    ArrayList<Horse> stable = new ArrayList<>();
 
-    ArrayList<Horse>HorseStable = new ArrayList<>();
+    public Stable(){}
 
-    public ArrayList<Horse> getHorseStable() {
-        return HorseStable;
+    public Stable(ArrayList<Horse> stable) {
+        this.stable = stable;
     }
 
-    public void setHorseStable(ArrayList<Horse> horseStable) {
-        HorseStable = horseStable;
+    public ArrayList<Horse> getStable() {
+        return stable;
     }
 
-
+    public void setStable(ArrayList<Horse> stable) {
+        this.stable = stable;
+    }
 
 }
