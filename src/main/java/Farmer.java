@@ -6,6 +6,6 @@ public class Farmer extends Person implements IEater, IBotanist {
 
     @Override
     public void plant(Crop crop, CropRow cropRow) {
-        
+
     }
 }

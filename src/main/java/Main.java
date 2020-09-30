@@ -71,6 +71,7 @@ public class Main {
 //        System.out.println(stable[0]);
 //        System.out.println(stable[1]);
 //        System.out.println(stable[2]);
+
     }
 
 }
