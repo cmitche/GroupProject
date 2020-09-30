@@ -1,7 +1,13 @@
-public class Farmer extends Person implements IEater {
-    @Override
-    public String isEating() {
-        return null;
+public class Farmer extends Botanist{
+    public Farmer(String name) {
+        super(name);
     }
 
+
+    @Override
+    public String toString() {
+        return "Farmer{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
