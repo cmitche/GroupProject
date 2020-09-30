@@ -9,6 +9,5 @@ public class Tractor implements IFarmVechile {
 
     @Override
     public void operateFarm() {
-
     }
 }

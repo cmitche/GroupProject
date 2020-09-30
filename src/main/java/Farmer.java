@@ -10,8 +10,11 @@ public class Farmer extends Person implements IEater, IBotanist {
         return null;
     }
 
+
     @Override
-    public void plant(Crop crop, CropRow cropRow) {
-        
+    public String toString() {
+        return "Farmer{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

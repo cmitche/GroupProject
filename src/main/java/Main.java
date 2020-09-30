@@ -27,11 +27,6 @@ public class Main {
         Farmer froilan = new Farmer("Froilan");
 
         Farm farm1 = new Farm()
-
         ArrayList<CropRow> cropRows = new ArrayList<>();
-
-
-
     }
-
 }

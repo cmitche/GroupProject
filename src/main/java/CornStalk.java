@@ -1,5 +1,4 @@
 public class CornStalk extends Crop{
-
     EarCorn earCorn;
 
     public EarCorn yield(){
@@ -50,4 +49,19 @@ public class CornStalk extends Crop{
         return false;
     }
 
+
+    public EarCorn getEarCorn() {
+        return earCorn;
+    }
+
+    public void setEarCorn(EarCorn earCorn) {
+        this.earCorn = earCorn;
+    }
+
+    @Override
+    public String toString() {
+        return "CornStalk{" +
+                "earCorn=" + earCorn +
+                '}';
+    }
 }
