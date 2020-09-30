@@ -4,17 +4,22 @@ public class Field {
 
     public ArrayList<CropRow> listOfCropRows;
 
-    //constructor
     public Field(ArrayList<CropRow> listOfCropRows) {
         this.listOfCropRows = listOfCropRows;
     }
 
     public Field(){}
 
+    public ArrayList<CropRow> getListOfCropRows() {
+        return listOfCropRows;
+    }
+
+    public void setListOfCropRows(ArrayList<CropRow> listOfCropRows) {
+        this.listOfCropRows = listOfCropRows;
+    }
+
     @Override
     public String toString() {
-        return "Field{" +
-                "listOfCropRows=" + listOfCropRows +
-                '}';
+        return "\n" + listOfCropRows;
     }
 }

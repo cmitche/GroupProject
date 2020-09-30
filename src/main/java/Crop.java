@@ -30,9 +30,6 @@ public abstract class Crop implements IProduce{
 
     public abstract boolean hasBeenFertilized(IProduce a);
 
-<<<<<<< HEAD
-
-=======
     @Override
     public String toString() {
         return "Crop{" +
@@ -40,5 +37,4 @@ public abstract class Crop implements IProduce{
                 ", hasBeenFertilized=" + hasBeenFertilized +
                 '}';
     }
->>>>>>> daee5edc0156e15bb77d6540f3adf798e537f570
 }

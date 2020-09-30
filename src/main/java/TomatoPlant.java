@@ -21,11 +21,6 @@ public class TomatoPlant extends Crop{
     }
 
     @Override
-    public boolean getHasBeenFertilized() {
-        return super.getHasBeenFertilized();
-    }
-
-    @Override
     public boolean hasBeenFertilized(IProduce a) {
         return false;
     }
@@ -57,8 +52,6 @@ public class TomatoPlant extends Crop{
 
     @Override
     public String toString() {
-        return "TomatoPlant{" +
-                "tomato=" + tomato +
-                '}';
+        return "TomatoPlant " + tomato;
     }
 }

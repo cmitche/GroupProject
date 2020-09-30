@@ -2,8 +2,7 @@ public class Animal implements INoiseMaker,IEater{
 
     @Override
     public void makeNoise() {
-
-        return "Animals make noise";
+        System.out.println("Brrr");
     }
 
     @Override

@@ -1,4 +1,4 @@
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -75,25 +75,31 @@ public class Main {
         stables.add(stablez[2]);
 
         ArrayList<CropRow> cropRowArrayList = new ArrayList<>();
-        cropRowArrayList.add(0, new CropRow())
+        cropRowArrayList.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
+        cropRowArrayList.add(1, new CropRow(new TomatoPlant(new Tomato("Brown", 2.5, false)), 23));
+        cropRowArrayList.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
+        cropRowArrayList.add(3, new CropRow(new CornStalk(new EarCorn(7)),23));
+        cropRowArrayList.add(4, new CropRow(new CornStalk(new EarCorn(7)),23));
 
-        Field[] fields = new Field[1];
+        Field[] fields = new Field[5];
         fields[0] = new Field();
+        fields[1] = new Field();
+        fields[2] = new Field();
+        fields[3] = new Field();
+        fields[4] = new Field();
 
-        fields[0].
+        fields[0].setListOfCropRows(cropRowArrayList);
+        fields[1].setListOfCropRows(cropRowArrayList);
+        fields[2].setListOfCropRows(cropRowArrayList);
+        fields[3].setListOfCropRows(cropRowArrayList);
+        fields[4].setListOfCropRows(cropRowArrayList);
 
-//        ArrayList<Crop> cropArrayList = new ArrayList<>();
-//        cropArrayList.add(new CornStalk(new EarCorn(5)));
-//        cropArrayList.add(new TomatoPlant(new Tomato("Green", .50, false)));
-//        cropArrayList.add(new TomatoPlant(new Tomato("Yellow", .60, false)));
-
-        ArrayList<CropRow> cropRows = new ArrayList<>();
-        cropRows.add(new CropRow(1,cropArrayList));
-        cropRows.add(new CropRow(2,cropArrayList));
-        cropRows.add(new CropRow(3,cropArrayList));
-
-        ArrayList<Field> fields = new ArrayList<>();
-        fields.add(new Field(cropRows));
+        ArrayList<Field> fieldz = new ArrayList<>();
+        fieldz.add(fields[0]);
+        fieldz.add(fields[1]);
+        fieldz.add(fields[2]);
+        fieldz.add(fields[3]);
+        fieldz.add(fields[4]);
 
         ArrayList<Person> hillBillies = new ArrayList<>();
         hillBillies.add(0, new Person("Darren"));
@@ -107,7 +113,7 @@ public class Main {
         ArrayList<Farmhouse> house = new ArrayList<>();
         house.add(0, new Farmhouse(hillBillies));
 
-        Farm farm1 = new Farm(fields, stables, coops, house);
+        //Farm farm1 = new Farm(fields, stables, coops, house);
 
         System.out.println("Stable 1: "+ stables.get(0));
         System.out.println("");
@@ -123,6 +129,7 @@ public class Main {
         System.out.println("");
         System.out.println("Chicken Coop 4: "+ coops.get(3));
 
+        System.out.println("Feild 1: "+ fieldz);
 
     }
 }

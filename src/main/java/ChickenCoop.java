@@ -19,9 +19,7 @@ public class ChickenCoop {
 
         @Override
         public String toString() {
-                return "ChickenCoop{" +
-                        "coop=" + coop +
-                        '}';
+                return  ""+ coop;
         }
 
 }
