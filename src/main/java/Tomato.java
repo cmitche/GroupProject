@@ -1,42 +1,17 @@
-public class Tomato {
-    private String color;
-    private double weightInLbs;
-    private boolean isRipe;
+public class Tomato implements IEdible{
 
-    public Tomato(String color, double weightInLbs, boolean isRipe) {
-        this.color = color;
-        this.weightInLbs = weightInLbs;
-        this.isRipe = isRipe;
-    }
+    String name;
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getWeightInLbs() {
-        return weightInLbs;
-    }
-
-    public void setWeightInLbs(double weightInLbs) {
-        this.weightInLbs = weightInLbs;
-    }
-
-    public boolean isRipe() {
-        return isRipe;
-    }
-
-    public void setRipe(boolean ripe) {
-        isRipe = ripe;
-
-    }
+    public Tomato(){this.name = "New Tomato";}
+    public Tomato(String name) {this.name = name;}
 
     @Override
     public String toString() {
-        return "\nTomato " +
-                "color: " + color +" | "+ "weight of tomatoes: " +weightInLbs+ "lbs | " + "is ripe: "+ isRipe;
+        return name;
+    }
+
+    @Override
+    public boolean isEdible() {
+        return true;
     }
 }

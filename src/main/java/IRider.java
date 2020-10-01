@@ -1,6 +1,5 @@
 public interface IRider {
-    public void mount(Rideable object);
+     void mount(Rideable object);
 
-
-    public void dismount(Rideable object);
+     void dismount(Rideable object);
 }

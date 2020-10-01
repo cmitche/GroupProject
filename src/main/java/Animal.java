@@ -1,4 +1,13 @@
 public class Animal implements INoiseMaker,IEater{
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @Override
     public void makeNoise() {
@@ -6,7 +15,7 @@ public class Animal implements INoiseMaker,IEater{
     }
 
     @Override
-    public String isEating() {
-        return "Animals eat stuff";
+    public void isEating(IEdible edible) {
+        System.out.println("Animal Eats...");
     }
 }

@@ -1,4 +1,4 @@
 public interface IEater {
 
-    String isEating();
+    void isEating(IEdible edible);
 }

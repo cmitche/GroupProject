@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class TomatoPlant extends Crop{
 
     Tomato tomato;
@@ -41,6 +43,11 @@ public class TomatoPlant extends Crop{
     }
 
     @Override
+    public boolean fertilize(ArrayList<CropRow> row) {
+        return false;
+    }
+
+    @Override
     public void setFertilized(boolean fertilized) {
 
     }
@@ -52,6 +59,6 @@ public class TomatoPlant extends Crop{
 
     @Override
     public String toString() {
-        return "TomatoPlant " + tomato;
+        return "TomatoPlant";
     }
 }

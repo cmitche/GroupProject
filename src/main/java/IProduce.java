@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public interface IProduce {
     boolean harvested = true;
     boolean fertilized = true;
@@ -7,6 +9,8 @@ public interface IProduce {
     void setHarvested(boolean harvested);
 
     boolean isFertilized();
+
+    boolean fertilize(ArrayList<CropRow> row);
 
     void setFertilized(boolean fertilized);
 
