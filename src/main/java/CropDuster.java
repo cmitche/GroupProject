@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class CropDuster implements IAirCraft, IFarmVechile, Rideable, IProduce {
+public class CropDuster implements IAirCraft, IFarmVechile, Rideable {
 
 
     public CropDuster() {
@@ -22,43 +22,14 @@ public class CropDuster implements IAirCraft, IFarmVechile, Rideable, IProduce {
     }
 
     @Override
-    public boolean isHarvested() {
-        return false;
-    }
-
-    @Override
-    public void setHarvested(boolean harvested) {
-
-    }
-
-    @Override
-    public boolean isFertilized() {
-        return false;
-    }
-
-    @Override
     public void fertilize(ArrayList<CropRow> row) {
         for (CropRow crowRow: row){
             crowRow.setFertilized(true);
         }
     }
 
-    @Override
-    public boolean getFertilized() {
-        return fertilized;
-    }
 
-    @Override
-    public void setFertilized(boolean fertilized) {
-
-    }
-
-    @Override
-    public boolean hasBeenHarvested() {
-        return false;
-    }
-
-    @Override
+   /* @Override
     public boolean hasBeenFertilized(ArrayList<CropRow> produces) {
         for (IProduce produce: produces){
             if (!produce.getFertilized()){
@@ -66,7 +37,7 @@ public class CropDuster implements IAirCraft, IFarmVechile, Rideable, IProduce {
             }
         }
         return true;
-    }
+    }*/
 
 
 }

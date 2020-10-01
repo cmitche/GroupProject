@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class EarCorn implements IProduce, IEdible{
+public class EarCorn extends Crop implements IProduce, IEdible{
     private int leaves;
 
     public EarCorn(int leaves){
@@ -17,12 +17,32 @@ public class EarCorn implements IProduce, IEdible{
     }
 
     @Override
+    public void fertilized() {
+
+    }
+
+    @Override
+    public void harvest() {
+
+    }
+
+    @Override
+    public boolean hasBeenFertilized(IProduce a) {
+        return false;
+    }
+
+    @Override
     public String toString() {
         return "EarCorn";
     }
 
     @Override
     public boolean isHarvested() {
+        return false;
+    }
+
+    @Override
+    public boolean getHarvested() {
         return false;
     }
 
@@ -36,10 +56,6 @@ public class EarCorn implements IProduce, IEdible{
         return false;
     }
 
-    @Override
-    public void fertilize(ArrayList<CropRow> row) {
-
-    }
 
     @Override
     public boolean getFertilized() {
@@ -57,6 +73,11 @@ public class EarCorn implements IProduce, IEdible{
     }
 
     @Override
+    public boolean hasBeenHarvested(ArrayList<CropRow> produces) {
+        return false;
+    }
+
+    @Override
     public boolean hasBeenFertilized(ArrayList<CropRow> produces) {
         return false;
     }
@@ -65,5 +86,10 @@ public class EarCorn implements IProduce, IEdible{
     @Override
     public boolean isEdible() {
         return false;
+    }
+
+    @Override
+    public String getName() {
+        return "Ear of Corn";
     }
 }

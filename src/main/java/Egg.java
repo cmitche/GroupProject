@@ -5,6 +5,8 @@ public class Egg implements IProduce, IEdible{
     private int num;
     private String color;
 
+
+    public Egg(){}
     public Egg(int num, String color) {
         this.num = num;
         this.color = color;
@@ -16,7 +18,17 @@ public class Egg implements IProduce, IEdible{
     }
 
     @Override
+    public String getName() {
+        return num+" Eggs,"+" type: " + color;
+    }
+
+    @Override
     public boolean isHarvested() {
+        return false;
+    }
+
+    @Override
+    public boolean getHarvested() {
         return false;
     }
 
@@ -30,10 +42,7 @@ public class Egg implements IProduce, IEdible{
         return false;
     }
 
-    @Override
-    public void fertilize(ArrayList<CropRow> row) {
 
-    }
 
     @Override
     public boolean getFertilized() {
@@ -47,6 +56,11 @@ public class Egg implements IProduce, IEdible{
 
     @Override
     public boolean hasBeenHarvested() {
+        return false;
+    }
+
+    @Override
+    public boolean hasBeenHarvested(ArrayList<CropRow> produces) {
         return false;
     }
 
