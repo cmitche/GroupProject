@@ -1,7 +1,10 @@
 public class Farmer extends Person implements IEater, IRider{
 
-    public Farmer(String name) {
+    Tractor tractor;
+
+    public Farmer(String name, Tractor tractor) {
         super(name);
+        this.tractor =tractor;
     }
 
     public void feeding(Animal animal, int quantity, IProduce produce){
@@ -15,7 +18,7 @@ public class Farmer extends Person implements IEater, IRider{
 
     @Override
     public void mount(Rideable object) {
-        System.out.print("she be riding this ");
+        System.out.println("Successfully hopped on this tractor ");
     }
 
     @Override

@@ -27,6 +27,11 @@ public class EarCorn implements IProduce, IEdible{
     }
 
     @Override
+    public boolean getHarvested() {
+        return false;
+    }
+
+    @Override
     public void setHarvested(boolean harvested) {
 
     }
@@ -53,6 +58,11 @@ public class EarCorn implements IProduce, IEdible{
 
     @Override
     public boolean hasBeenHarvested() {
+        return false;
+    }
+
+    @Override
+    public boolean hasBeenHarvested(ArrayList<CropRow> produces) {
         return false;
     }
 

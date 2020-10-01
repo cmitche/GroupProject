@@ -5,6 +5,7 @@ public class CropRow implements IProduce{
     private int length;
 
     private boolean getTruth = false;
+    private boolean harvested = false;
 
     public CropRow(Crop crop, int length){
         this.crop = crop;
@@ -40,8 +41,13 @@ public class CropRow implements IProduce{
     }
 
     @Override
-    public void setHarvested(boolean harvested) {
+    public boolean getHarvested() {
+        return harvested;
+    }
 
+    @Override
+    public void setHarvested(boolean harvested) {
+        this.harvested = harvested;
     }
 
     @Override
@@ -66,6 +72,16 @@ public class CropRow implements IProduce{
     @Override
     public boolean hasBeenHarvested() {
         return false;
+    }
+
+    @Override
+    public boolean hasBeenHarvested(ArrayList<CropRow> produces) {
+        for (IProduce produce: produces){
+            if (!produce.getFertilized()){
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
