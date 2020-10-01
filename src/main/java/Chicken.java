@@ -1,7 +1,10 @@
-public class Chicken implements IProduce{
+import java.util.ArrayList;
+
+public class Chicken extends Animal implements IProduce{
     Egg egg;
     private String name;
     private char gender;
+    private boolean fertilized;
 
 
     public Chicken(String name, char gender, Egg egg) {
@@ -44,6 +47,8 @@ public class Chicken implements IProduce{
             this.gender = gender;
         }
 
+
+
         @Override
         public boolean isHarvested () {
             return false;
@@ -59,9 +64,14 @@ public class Chicken implements IProduce{
             return false;
         }
 
-        @Override
-        public void setFertilized ( boolean fertilized){
+    @Override
+    public boolean fertilize(ArrayList<CropRow> row) {
+        return false;
+    }
 
+    @Override
+        public void setFertilized (boolean fertilized){
+            this.fertilized = fertilized;
         }
 
         @Override
@@ -71,12 +81,25 @@ public class Chicken implements IProduce{
 
         @Override
         public boolean hasBeenFertilized (IProduce a){
-            return false;
+
+            if(a.isFertilized()) {
+                return true;
+            }else return false;
         }
 
         @Override
         public String toString(){
             return "\n" + name + " | " + gender + " | " + egg + "\n";
         }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Cockaddoole");
+    }
+
+    @Override
+    public void isEating(IEdible edible) {
+        System.out.println("Cluck cluck.."+edible);
+    }
     }
 

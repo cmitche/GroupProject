@@ -1,8 +1,12 @@
+import java.util.ArrayList;
+
 public class Egg implements IProduce, IEdible{
 
+    private int num;
     private String color;
 
-    public Egg(String color) {
+    public Egg(int num, String color) {
+        this.num = num;
         this.color = color;
     }
 
@@ -27,6 +31,11 @@ public class Egg implements IProduce, IEdible{
     }
 
     @Override
+    public boolean fertilize(ArrayList<CropRow> row) {
+        return false;
+    }
+
+    @Override
     public void setFertilized(boolean fertilized) {
 
     }
@@ -43,6 +52,6 @@ public class Egg implements IProduce, IEdible{
 
     @Override
     public String toString() {
-        return "Egg color: "+ color;
+        return num+" Eggs,"+" type: " + color;
     }
 }

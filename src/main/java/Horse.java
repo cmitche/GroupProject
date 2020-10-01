@@ -1,5 +1,5 @@
 
-public class Horse{
+public class Horse extends Animal implements Rideable{
 
     private String color;
     private String name;
@@ -36,7 +36,7 @@ public class Horse{
     }
 
     public boolean isGalloping(){
-        return false;
+        return true;
     }
 
     @Override
@@ -44,5 +44,15 @@ public class Horse{
         return "\n"+ name +" | "+
                 "color :" + color +
                 " | age: " + age +"\n";
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Brrrrr");
+    }
+
+    @Override
+    public void isEating(IEdible edible) {
+        System.out.println("Chomp Chomp..."+ edible);
     }
 }

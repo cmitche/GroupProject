@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class CornStalk extends Crop{
     EarCorn earCorn;
 
@@ -35,6 +37,11 @@ public class CornStalk extends Crop{
     }
 
     @Override
+    public boolean fertilize(ArrayList<CropRow> row) {
+        return false;
+    }
+
+    @Override
     public void setFertilized(boolean fertilized) {
 
     }
@@ -61,8 +68,6 @@ public class CornStalk extends Crop{
 
     @Override
     public String toString() {
-        return "CornStalk{" +
-                "earCorn=" + earCorn +
-                '}';
+        return "Corn Stalk ";
     }
 }

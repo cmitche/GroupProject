@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements IRider{
 
     private String name;
 
@@ -14,11 +14,20 @@ public class Person {
         this.name = name;
     }
 
-
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public void mount(Rideable object) {
+
+    }
+
+    @Override
+    public void dismount(Rideable object) {
+
     }
 }

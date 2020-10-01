@@ -1,49 +1,33 @@
-public class Pilot extends Person{
-    private int hat;
-    private int googles;
-    private int gloves;
+public class Pilot extends Person implements IRider{
     CropDuster cropDuster;
 
-
-    public Pilot(String name, int hat, int googles, int gloves, CropDuster cropDuster) {
+    public Pilot(String name, CropDuster cropDuster) {
         super(name);
-        this.hat = hat;
-        this.googles = googles;
-        this.gloves = gloves;
         this.cropDuster = cropDuster;
     }
 
-    public int getHat() {
-        return hat;
+    public CropDuster getCropDuster() {
+        return cropDuster;
     }
 
-    public void setHat(int hat) {
-        this.hat = hat;
-    }
-
-    public int getGoogles() {
-        return googles;
-    }
-
-    public void setGoogles(int googles) {
-        this.googles = googles;
-    }
-
-    public int getGloves() {
-        return gloves;
-    }
-
-    public void setGloves(int gloves) {
-        this.gloves = gloves;
+    public void setCropDuster(CropDuster cropDuster) {
+        this.cropDuster = cropDuster;
     }
 
     @Override
     public String toString() {
         return "Pilot{" +
-                "hat=" + hat +
-                ", googles=" + googles +
-                ", gloves=" + gloves +
-                ", cropDuster=" + cropDuster +
+                "cropDuster=" + cropDuster +
                 '}';
+    }
+
+    @Override
+    public void mount(Rideable object) {
+        System.out.println("flying the plane.");
+    }
+
+    @Override
+    public void dismount(Rideable object) {
+        System.out.println("Landing Plane...");
     }
 }
