@@ -1,4 +1,4 @@
-public class Pilot extends Person implements IRider{
+public class Pilot extends Person implements IRider, IEater{
     CropDuster cropDuster;
 
     public Pilot(String name, CropDuster cropDuster) {
@@ -23,11 +23,30 @@ public class Pilot extends Person implements IRider{
 
     @Override
     public void mount(Rideable object) {
-        System.out.println("flying the plane.");
+        if (object instanceof CropDuster){
+            System.out.println(getName() + " is riding a " + getCropDuster());
+        }
+        else{
+            System.out.print(getName() + " is riding a " + object.getClass().getSimpleName() + " named ");
+        }
     }
 
     @Override
     public void dismount(Rideable object) {
-        System.out.println("Landing Plane...");
+        System.out.print( getName() + " getting off ....");
+    }
+
+    @Override
+    public void isEating(IEdible edible) {
+
+    }
+
+    @Override
+    public void isEating(IEdible[] edible) {
+        System.out.println(getName() + " is eating: ");
+        for(IEdible edible1: edible){
+            System.out.print(edible1.getName() + " ");
+        }
+        System.out.println();
     }
 }

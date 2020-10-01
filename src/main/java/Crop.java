@@ -1,4 +1,6 @@
-public abstract class Crop implements IProduce{
+import java.util.ArrayList;
+
+public  class Crop implements IProduce{
 
     //- hasBeenHarvested: boolean
     private boolean hasBeenHarvested;
@@ -7,10 +9,8 @@ public abstract class Crop implements IProduce{
     private boolean hasBeenFertilized;
 
     //+ fertilized(): void
-    public abstract void fertilized();
 
     //+ harvest(): void
-    public abstract void harvest();
 
     public boolean isHasBeenHarvested() {
         return hasBeenHarvested;
@@ -28,7 +28,7 @@ public abstract class Crop implements IProduce{
         this.hasBeenFertilized = hasBeenFertilized;
     }
 
-    public abstract boolean hasBeenFertilized(IProduce a);
+    public Crop(){}
 
     @Override
     public String toString() {
@@ -36,5 +36,50 @@ public abstract class Crop implements IProduce{
                 "hasBeenHarvested=" + hasBeenHarvested +
                 ", hasBeenFertilized=" + hasBeenFertilized +
                 '}';
+    }
+
+    @Override
+    public boolean isHarvested() {
+        return false;
+    }
+
+    @Override
+    public boolean getHarvested() {
+        return false;
+    }
+
+    @Override
+    public void setHarvested(boolean harvested) {
+
+    }
+
+    @Override
+    public boolean isFertilized() {
+        return false;
+    }
+
+    @Override
+    public boolean getFertilized() {
+        return false;
+    }
+
+    @Override
+    public void setFertilized(boolean fertilized) {
+
+    }
+
+    @Override
+    public boolean hasBeenHarvested() {
+        return false;
+    }
+
+    @Override
+    public boolean hasBeenHarvested(ArrayList<CropRow> produces) {
+        return false;
+    }
+
+    @Override
+    public boolean hasBeenFertilized(ArrayList<CropRow> produces) {
+        return false;
     }
 }

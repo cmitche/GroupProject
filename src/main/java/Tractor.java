@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Tractor implements IFarmVechile, Rideable , IProduce{
+public class Tractor implements IFarmVechile, Rideable{
     CropRow cropRow;
 
     public Tractor(CropRow cropRow) {
@@ -24,48 +24,8 @@ public class Tractor implements IFarmVechile, Rideable , IProduce{
     }
 
     @Override
-    public boolean isHarvested() {
-        return false;
-    }
-
-    @Override
-    public boolean getHarvested() {
-        return false;
-    }
-
-
-    @Override
-    public void setHarvested(boolean harvested) {
-    }
-
-    @Override
-    public boolean isFertilized() {
-        return false;
-    }
-
-    @Override
     public void fertilize(ArrayList<CropRow> row) {
 
-    }
-
-    @Override
-    public boolean getFertilized() {
-        return false;
-    }
-
-    @Override
-    public void setFertilized(boolean fertilized) {
-
-    }
-
-    @Override
-    public boolean hasBeenHarvested() {
-        return false;
-    }
-
-    @Override
-    public boolean hasBeenHarvested(ArrayList<CropRow> produces) {
-        return false;
     }
 
     @Override

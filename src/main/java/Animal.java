@@ -18,4 +18,9 @@ public class Animal implements INoiseMaker,IEater{
     public void isEating(IEdible edible) {
         System.out.println("Animal Eats...");
     }
+
+    @Override
+    public void isEating(IEdible[] edible) {
+
+    }
 }

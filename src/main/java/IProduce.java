@@ -12,7 +12,7 @@ public interface IProduce {
 
     boolean isFertilized();
 
-    void fertilize(ArrayList<CropRow> row);
+
 
     boolean getFertilized();
 

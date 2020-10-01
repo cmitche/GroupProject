@@ -47,10 +47,6 @@ public class TomatoPlant extends Crop{
         return false;
     }
 
-    @Override
-    public void fertilize(ArrayList<CropRow> row) {
-
-    }
 
     @Override
     public boolean getFertilized() {

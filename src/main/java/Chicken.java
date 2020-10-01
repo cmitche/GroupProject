@@ -75,10 +75,6 @@ public class Chicken extends Animal implements IProduce{
             return false;
         }
 
-    @Override
-    public void fertilize(ArrayList<CropRow> row) {
-
-    }
 
     @Override
     public boolean getFertilized() {
@@ -89,8 +85,8 @@ public class Chicken extends Animal implements IProduce{
         public void setFertilized (boolean fertilized){
     }
 
-        @Override
-        public boolean hasBeenHarvested () {
+    @Override
+    public boolean hasBeenHarvested () {
             return false;
         }
 

@@ -3,28 +3,34 @@ import java.util.ArrayList;
 public class Tuesday {
 
     public static void main(String[] args) {
-        Stable stable = new Stable();
-        Stable stable2 = new Stable();
-        Stable stable3 = new Stable();
+        Farmer froilan = new Farmer("Froilan");
 
-        ArrayList<Horse> candyPaintHorses = new ArrayList<>();
-        candyPaintHorses.add(0,new Horse( "Red", "White Lightning", 8));
-        candyPaintHorses.add(1,new Horse("Red", "Shit Brown", 5));
-        candyPaintHorses.add(2,new Horse("Red", "Cracker Jack",10));
 
-        ArrayList<Horse> brownHorses = new ArrayList<>();
-        brownHorses.add(0,new Horse("White", "Xhit head",10));
-        brownHorses.add(1,new Horse("White", "Dean Alam",10));
-        brownHorses.add(2,new Horse("White", "Darel Jeeter",10));
+        ArrayList<CropRow> cropRowArrayList1 = new ArrayList<>();
+        cropRowArrayList1.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
+        cropRowArrayList1.add(1, new CropRow(new TomatoPlant(new Tomato()), 23));
+        cropRowArrayList1.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
 
-        ArrayList<Horse> whiteHorses = new ArrayList<>();
-        whiteHorses.add(0,new Horse("Blue", "Crackle Barrel", 5));
-        whiteHorses.add(1,new Horse("Blue", "Brick Mode", 5));
-        whiteHorses.add(2,new Horse("Blue", "Black Thunder", 5));
+        ArrayList<CropRow> cropRowArrayList2 = new ArrayList<>();
+        cropRowArrayList2.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
+        cropRowArrayList2.add(1, new CropRow(new TomatoPlant(new Tomato()), 23));
+        cropRowArrayList2.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
 
-        stable.setStable(candyPaintHorses);
-        stable2.setStable(brownHorses);
-        stable3.setStable(whiteHorses);
+        ArrayList<CropRow> cropRowArrayList3 = new ArrayList<>();
+        cropRowArrayList3.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
+        cropRowArrayList3.add(1, new CropRow(new TomatoPlant(new Tomato()), 23));
+        cropRowArrayList3.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
+
+        ArrayList<CropRow> cropRowArrayList4 = new ArrayList<>();
+        cropRowArrayList4.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
+        cropRowArrayList4.add(1, new CropRow(new TomatoPlant(new Tomato()), 21));
+        cropRowArrayList4.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
+
+        ArrayList<CropRow> cropRowArrayList5 = new ArrayList<>();
+        cropRowArrayList5.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
+        cropRowArrayList5.add(1, new CropRow(new TomatoPlant(new Tomato()), 23));
+        cropRowArrayList5.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
+
 
 
         ChickenCoop coop1 = new ChickenCoop();
@@ -60,120 +66,114 @@ public class Tuesday {
         coop3.setCoop(whiteChickens);
         coop4.setCoop(hens);
 
-        ArrayList<CropRow> cropRowArrayList1 = new ArrayList<>();
-        cropRowArrayList1.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
-        cropRowArrayList1.add(1, new CropRow(new TomatoPlant(new Tomato()), 23));
-        cropRowArrayList1.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
+        Stable stable = new Stable();
+        Stable stable2 = new Stable();
+        Stable stable3 = new Stable();
 
-        ArrayList<CropRow> cropRowArrayList2 = new ArrayList<>();
-        cropRowArrayList2.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
-        cropRowArrayList2.add(1, new CropRow(new TomatoPlant(new Tomato()), 23));
-        cropRowArrayList2.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
+        ArrayList<Horse> candyPaintHorses = new ArrayList<>();
+        candyPaintHorses.add(0,new Horse( "Red", "White Lightning", 8));
+        candyPaintHorses.add(1,new Horse("Red", "Shit Brown", 5));
+        candyPaintHorses.add(2,new Horse("Red", "Cracker Jack",10));
 
-        ArrayList<CropRow> cropRowArrayList3 = new ArrayList<>();
-        cropRowArrayList3.add(0, new CropRow(new CornStalk(new EarCorn(4)),23));
-        cropRowArrayList3.add(1, new CropRow(new TomatoPlant(new Tomato()), 23));
-        cropRowArrayList3.add(2, new CropRow(new CornStalk(new EarCorn(5)),23));
+        ArrayList<Horse> brownHorses = new ArrayList<>();
+        brownHorses.add(0,new Horse("White", "Xhit head",10));
+        brownHorses.add(1,new Horse("White", "Dean Alam",10));
+        brownHorses.add(2,new Horse("White", "Darel Jeeter",10));
 
-        ArrayList<Person> hillBillies = new ArrayList<>();
-        hillBillies.add(0, new Person("Darren"));
-        hillBillies.add(1, new Person("Corey"));
-        hillBillies.add(2, new Person("Raymundo"));
-        hillBillies.add(3, new Person("Yasmin"));
-        hillBillies.add(4, new Person("David"));
-        hillBillies.add(5, new Person("Froilan"));
-        hillBillies.add(6, new Person("Froilanda"));
+        ArrayList<Horse> whiteHorses = new ArrayList<>();
+        whiteHorses.add(0,new Horse("Blue", "Crackle Barrel", 5));
+        whiteHorses.add(1,new Horse("Blue", "Brick Mode", 5));
+        whiteHorses.add(2,new Horse("Blue", "Black Thunder", 5));
 
-        Farmhouse house = new Farmhouse(hillBillies);
+        stable.setStable(candyPaintHorses);
+        stable2.setStable(brownHorses);
+        stable3.setStable(whiteHorses);
 
-        // System.out.println(house.getPeople());
+        IFarmVechile tractor = new Tractor();
+        IFarmVechile bigTractor = new Tractor();
 
-        CropDuster dusty = new CropDuster();
+        froilan.setTractor((Tractor) bigTractor);
 
-        Farmer froilan = new Farmer("Froilan",new Tractor());
-        Person fodana = new Pilot("Fodana", dusty);
-        //fodana.mount(dusty);
-        // dusty.fly();
+        CropDuster cropDuster = new CropDuster();
 
-        // dusty.operateFarm();
-
-        // fodana.dismount(dusty);
+        Pilot froilanda = new Pilot("Froilanda", cropDuster);
 
         for(Horse horses: candyPaintHorses){
             froilan.mount(horses);
             System.out.println(horses.getName());
+            froilanda.mount(horses);
+            System.out.println(horses.getName());
             System.out.println("Horses galloping? " + horses.isGalloping());
             froilan.dismount(horses);
+            System.out.println(horses.getName());
+            froilanda.dismount(horses);
             System.out.println(horses.getName());
             froilan.feeding(horses, 3, new EarCorn(4));
             horses.makeNoise();
         }for(Horse horses: brownHorses){
             froilan.mount(horses);
             System.out.println(horses.getName());
+            froilanda.mount(horses);
+            System.out.println(horses.getName());
             System.out.println("Horses galloping? " + horses.isGalloping());
             froilan.dismount(horses);
+            System.out.println(horses.getName());
+            froilanda.dismount(horses);
             System.out.println(horses.getName());
             froilan.feeding(horses, 3, new EarCorn(4));
             horses.makeNoise();
-        }for(Horse horses: whiteHorses){
+        }for(Horse horses: whiteHorses) {
             froilan.mount(horses);
+            System.out.println(horses.getName());
+            froilanda.mount(horses);
             System.out.println(horses.getName());
             System.out.println("Horses galloping? " + horses.isGalloping());
             froilan.dismount(horses);
+            System.out.println(horses.getName());
+            froilanda.dismount(horses);
             System.out.println(horses.getName());
             froilan.feeding(horses, 3, new EarCorn(4));
             horses.makeNoise();
         }
 
-        froilan.isEating((IEdible) new EarCorn(3));
-        froilan.isEating((IEdible)new Tomato("Tomato"));
-        froilan.isEating((IEdible)new Tomato("Tomato"));
 
-        froilan.isEating((IEdible)new Egg(5, "Sunny Side Up"));
+        IEdible[] ediblesFroilan = {(IEdible) new EarCorn(3), new Tomato(), new Tomato(), new Egg(2, "Scrambled")};
+        IEdible[] ediblesFroilana = {new EarCorn(3), new EarCorn(4), new Tomato(),new Egg(5, "Sunny Side Up") };
 
-        for(Chicken chicken: brownChickens){
+        froilan.isEating(ediblesFroilan);
+        froilanda.isEating(ediblesFroilana);
+
+        /*for(Chicken chicken: brownChickens){
             froilan.feeding(chicken,1, new EarCorn(1));
             System.out.println(chicken.getEgg());
             chicken.egg.isFertilized();
             chicken.egg.setFertilized(true);
             chicken.fertileEgg(chicken.egg);
             System.out.println(chicken.egg.isFertilized());
-        }
-
-        Tractor greenTractor = new Tractor();
-
-
-
-
-
-        Farmer dude = new Farmer("Frolan", greenTractor);
-
-        dude.mount(greenTractor);
-        greenTractor.operateFarm();
-
+        }*/
 
         for(CropRow field1: cropRowArrayList1){
             System.out.println(field1.getCrop());
-           dude.tractor.operateFarm();
-           dude.tractor.makeNoise();
-           dude.tractor.harvest(cropRowArrayList1);
+           froilan.tractor.operateFarm();
+           froilan.tractor.makeNoise();
+           froilan.tractor.harvest(cropRowArrayList1);
         }
-        System.out.println("Harvested " +dude.tractor.hasBeenFertilized(cropRowArrayList1));
+        System.out.println("Harvested " +froilan.tractor.hasBeenFertilized(cropRowArrayList1));
         for(CropRow field1: cropRowArrayList2){
             System.out.println(field1.getCrop());
-            dude.tractor.operateFarm();
-            dude.tractor.makeNoise();
-            dude.tractor.harvest(cropRowArrayList2);
+            froilan.tractor.operateFarm();
+            froilan.tractor.makeNoise();
+            froilan.tractor.harvest(cropRowArrayList2);
         }
-        System.out.println("Harvested " +dude.tractor.hasBeenFertilized(cropRowArrayList2));
+        System.out.println("Harvested " +froilan.tractor.hasBeenFertilized(cropRowArrayList2));
         for(CropRow field1: cropRowArrayList3){
             System.out.println(field1.getCrop());
-            dude.tractor.operateFarm();
-            dude.tractor.makeNoise();
-            dude.tractor.harvest(cropRowArrayList3);
+            froilan.tractor.operateFarm();
+            froilan.tractor.makeNoise();
+            froilan.tractor.harvest(cropRowArrayList3);
         }
-        System.out.println("Harvested " +dude.tractor.hasBeenFertilized(cropRowArrayList3));
-        dude.dismount(greenTractor);
+        System.out.println("Harvested " +froilan.tractor.hasBeenFertilized(cropRowArrayList3));
+        froilan.dismount((Rideable) bigTractor);
     }
 
 }

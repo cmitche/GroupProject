@@ -1,13 +1,7 @@
 import java.util.ArrayList;
 
-public class Botanist extends Person {
-    public Botanist(String name) {
-        super(name);
-        }
-        public String plantCrops(Field field){
-
-            return ""+field;
-        }
+public interface Botanist {
+        String plantCrops(IProduce produce);
 
     }
 

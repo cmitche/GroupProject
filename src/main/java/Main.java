@@ -295,7 +295,7 @@ public class Main {
             lady.cropDuster.operateFarm();
             lady.cropDuster.fertilize(cropRowArrayList1);
         }
-        System.out.println("Fertilization " +lady.cropDuster.hasBeenFertilized(cropRowArrayList1));
+/*        System.out.println("Fertilization " +lady.cropDuster.hasBeenFertilized(cropRowArrayList1));
         for(CropRow field1: cropRowArrayList2){
             System.out.println(field1.getCrop());
             lady.cropDuster.makeNoise();
@@ -313,10 +313,10 @@ public class Main {
         fodana.dismount(dusty);
 
         System.out.println("----------------TUESDAY-----------------");
-        Tractor greenTractor = new Tractor();
+        Tractor greenTractor = new Tractor();*/
 
 
-
+/*
 
 
         Farmer dude = new Farmer("Frolan", greenTractor);
@@ -346,7 +346,7 @@ public class Main {
             dude.tractor.harvest(cropRowArrayList3);
         }
         System.out.println("Harvested " +dude.tractor.hasBeenFertilized(cropRowArrayList3));
-        dude.dismount(greenTractor);
+        dude.dismount(greenTractor);*/
     }
 
     
