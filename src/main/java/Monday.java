@@ -36,11 +36,12 @@ public class Monday {
             lady.mount(duster);
             lady.cropDuster.fly();
             lady.cropDuster.makeNoise();
+
             lady.cropDuster.operateFarm();
-            System.out.println("Fertilized? "+field1.getFertilized());
-            System.out.println(lady.cropDuster.fertilize(cropRowArrayList1));
-            System.out.println("Fertilized? "+field1.getFertilized());
+            lady.cropDuster.fertilize(cropRowArrayList1);
+
         }
+        System.out.println("Fertilized? " +lady.cropDuster.hasBeenFertilized(cropRowArrayList1));
 
     }
 }

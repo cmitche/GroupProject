@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public interface IProduce {
     boolean harvested = true;
-    boolean fertilized = true;
+    boolean fertilized = false;
 
     boolean isHarvested();
 
@@ -10,11 +10,13 @@ public interface IProduce {
 
     boolean isFertilized();
 
-    boolean fertilize(ArrayList<CropRow> row);
+    void fertilize(ArrayList<CropRow> row);
+
+    boolean getFertilized();
 
     void setFertilized(boolean fertilized);
 
     boolean hasBeenHarvested();
 
-    boolean hasBeenFertilized(IProduce a);
+    boolean hasBeenFertilized(ArrayList<CropRow> produces);
 }
