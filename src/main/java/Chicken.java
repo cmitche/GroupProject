@@ -4,7 +4,6 @@ public class Chicken extends Animal implements IProduce{
     Egg egg;
     private String name;
     private char gender;
-    private boolean fertilized;
 
 
     public Chicken(String name, char gender, Egg egg) {
@@ -31,7 +30,14 @@ public class Chicken extends Animal implements IProduce{
             }
         }
 
-        public String getName () {
+    private boolean hasBeenFertilized(Egg egg) {
+        if(egg.getFertilized()){
+            return true;
+        }
+        else return false;
+    }
+
+    public String getName () {
             return name;
         }
 
@@ -65,32 +71,34 @@ public class Chicken extends Animal implements IProduce{
         }
 
     @Override
-    public boolean fertilize(ArrayList<CropRow> row) {
+    public void fertilize(ArrayList<CropRow> row) {
+
+    }
+
+    @Override
+    public boolean getFertilized() {
         return false;
     }
 
     @Override
         public void setFertilized (boolean fertilized){
-            this.fertilized = fertilized;
-        }
+    }
 
         @Override
         public boolean hasBeenHarvested () {
             return false;
         }
 
-        @Override
-        public boolean hasBeenFertilized (IProduce a){
+    @Override
+    public boolean hasBeenFertilized(ArrayList<CropRow> produces) {
+        return false;
+    }
 
-            if(a.isFertilized()) {
-                return true;
-            }else return false;
-        }
 
-        @Override
-        public String toString(){
-            return "\n" + name + " | " + gender + " | " + egg + "\n";
-        }
+    @Override
+    public String toString(){
+        return "\n" + name + " | " + gender + " | " + egg + "\n";
+    }
 
     @Override
     public void makeNoise() {

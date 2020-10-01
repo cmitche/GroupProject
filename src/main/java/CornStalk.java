@@ -37,7 +37,12 @@ public class CornStalk extends Crop{
     }
 
     @Override
-    public boolean fertilize(ArrayList<CropRow> row) {
+    public void fertilize(ArrayList<CropRow> row) {
+
+    }
+
+    @Override
+    public boolean getFertilized() {
         return false;
     }
 
@@ -48,6 +53,11 @@ public class CornStalk extends Crop{
 
     @Override
     public boolean hasBeenHarvested() {
+        return false;
+    }
+
+    @Override
+    public boolean hasBeenFertilized(ArrayList<CropRow> produces) {
         return false;
     }
 

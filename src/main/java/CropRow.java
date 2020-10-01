@@ -4,12 +4,12 @@ public class CropRow implements IProduce{
     Crop crop;
     private int length;
 
-    private boolean getTruth;
+    private boolean getTruth = false;
 
     public CropRow(Crop crop, int length){
         this.crop = crop;
         this.length = length;
-        this.getTruth = false;
+
     }
 
     public Crop getCrop() {
@@ -50,8 +50,8 @@ public class CropRow implements IProduce{
     }
 
     @Override
-    public boolean fertilize(ArrayList<CropRow> row) {
-        return false;
+    public void fertilize(ArrayList<CropRow> row) {
+
     }
 
     public boolean getFertilized(){
@@ -68,10 +68,15 @@ public class CropRow implements IProduce{
         return false;
     }
 
-
     @Override
-    public boolean hasBeenFertilized(IProduce a) {
-        return false;
+    public boolean hasBeenFertilized(ArrayList<CropRow> produces) {
+        for (IProduce produce: produces){
+            if (!produce.getFertilized()){
+                return false;
+            }
+        }
+        return true;
     }
+
 
 }

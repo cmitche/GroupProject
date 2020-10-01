@@ -1,6 +1,4 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class CropDuster implements IAirCraft, IFarmVechile, Rideable, IProduce {
 
@@ -39,8 +37,15 @@ public class CropDuster implements IAirCraft, IFarmVechile, Rideable, IProduce {
     }
 
     @Override
-    public boolean fertilize(ArrayList<CropRow> row) {
-        return true;
+    public void fertilize(ArrayList<CropRow> row) {
+        for (CropRow crowRow: row){
+            crowRow.setFertilized(true);
+        }
+    }
+
+    @Override
+    public boolean getFertilized() {
+        return fertilized;
     }
 
     @Override
@@ -54,8 +59,14 @@ public class CropDuster implements IAirCraft, IFarmVechile, Rideable, IProduce {
     }
 
     @Override
-    public boolean hasBeenFertilized(IProduce a) {
-        return false;
+    public boolean hasBeenFertilized(ArrayList<CropRow> produces) {
+        for (IProduce produce: produces){
+            if (!produce.getFertilized()){
+                return false;
+            }
+        }
+        return true;
     }
+
 
 }
